@@ -266,11 +266,11 @@ export const formOptions = {
     { value: "todos", label: "Quero saber sobre todos os tratamentos" }
   ],
   locations: [
-    { value: "vila-madalena", label: "Vila Madalena" },
-    { value: "vila-mariana", label: "Vila Mariana" },
-    { value: "paulista", label: "Paulista" },
-    { value: "perdizes", label: "Perdizes" },
-    { value: "tatuape", label: "Tatuapé" },
-    { value: "moema", label: "Moema" }
+    { value: "vila-mariana", label: "Vila Mariana - Segunda-Feira" },
+    { value: "moema", label: "Moema - Terça-Feira" },
+    { value: "tatuape", label: "Tatuapé - Quarta-feira" },
+    { value: "perdizes", label: "Perdizes - Quinta-Feira" },
+    { value: "paulista", label: "Paulista - Sexta-feira" },
+    { value: "vila-madalena", label: "Vila Madalena - Sábado" }
   ]
 };
