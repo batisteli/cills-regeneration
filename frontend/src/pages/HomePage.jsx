@@ -300,21 +300,40 @@ export const HomePage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {locationsData.map((location) => (
               <Card key={location.id} className="bg-white bg-opacity-10 border-gold border hover:bg-opacity-20 transition-all duration-300">
-                <CardContent className="p-6 text-center">
-                  <MapPin size={32} className="text-gold mx-auto mb-4" />
-                  <h3 className="text-2xl font-montserrat font-medium mb-2">
-                    {location.name}
-                  </h3>
-                  <p className="text-gray-200 font-montserrat-light">
-                    {location.address}
-                  </p>
+                <CardContent className="p-6">
+                  <div className="flex items-start mb-4">
+                    <MapPin size={28} className="text-gold mr-3 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="text-2xl font-montserrat font-medium mb-3">
+                        {location.name}
+                      </h3>
+                      <div className="space-y-2 text-gray-200 font-montserrat-light">
+                        <p className="text-sm">
+                          {location.street}, {location.number}
+                        </p>
+                        <p className="text-sm">
+                          {location.neighborhood} - CEP: {location.cep}
+                        </p>
+                        <p className="text-sm text-gold font-medium mt-3">
+                          {location.schedule}
+                        </p>
+                        <p className="text-sm">
+                          {location.hours}
+                        </p>
+                        <p className="text-sm text-gray-300 mt-3">
+                          <Phone size={14} className="inline mr-1" />
+                          {location.phone}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
           <div className="text-center mt-12">
             <p className="text-lg font-montserrat-light mb-6">
-              Todas as unidades com fácil acesso ao transporte público
+              Atendimento personalizado com hora marcada
             </p>
             <Button 
               size="lg"
