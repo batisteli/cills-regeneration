@@ -91,7 +91,7 @@ export const HomePage = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_b266a66b-ea52-4f2f-aa90-40c1e4e5fce9/artifacts/opzjbdhi_LOGO01.png" 
                 alt="Studio Batisteli Logo" 
-                className="h-14"
+                className="h-20 md:h-24"
               />
             </div>
             
@@ -338,30 +338,18 @@ export const HomePage = () => {
               Transformações que inspiram e renovam a autoestima
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {beforeAfterData.map((item) => (
-              <Card key={item.id} className="overflow-hidden shadow-lg">
+              <Card key={item.id} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <CardContent className="p-0">
-                  <div className="grid grid-cols-2">
-                    <div className="relative">
-                      <img 
-                        src={item.before} 
-                        alt="Antes" 
-                        className="w-full h-64 object-cover"
-                      />
-                      <div className="absolute top-4 left-4 bg-navy text-white px-4 py-2 rounded-full font-montserrat text-sm">
-                        Antes
-                      </div>
-                    </div>
-                    <div className="relative">
-                      <img 
-                        src={item.after} 
-                        alt="Depois" 
-                        className="w-full h-64 object-cover"
-                      />
-                      <div className="absolute top-4 right-4 bg-gold text-navy px-4 py-2 rounded-full font-montserrat text-sm font-medium">
-                        Depois
-                      </div>
+                  <div className="relative">
+                    <img 
+                      src={item.image} 
+                      alt={item.treatment} 
+                      className="w-full h-80 object-cover"
+                    />
+                    <div className="absolute top-4 right-4 bg-gold text-navy px-4 py-2 rounded-lg font-montserrat text-sm font-medium shadow-lg">
+                      Antes & Depois
                     </div>
                   </div>
                   <div className="p-6 bg-white">
@@ -620,7 +608,7 @@ export const HomePage = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_b266a66b-ea52-4f2f-aa90-40c1e4e5fce9/artifacts/opzjbdhi_LOGO01.png" 
                 alt="Studio Batisteli Logo" 
-                className="h-12 mb-4 brightness-0 invert"
+                className="h-16 mb-4 brightness-0 invert"
               />
               <p className="text-gray-400 font-montserrat-light leading-relaxed">
                 Especialistas em regeneração capilar não cirúrgica. 

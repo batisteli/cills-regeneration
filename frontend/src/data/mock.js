@@ -122,17 +122,33 @@ export const locationsData = [
 export const beforeAfterData = [
   {
     id: 1,
-    before: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85",
-    after: "https://images.unsplash.com/photo-1717160675489-7779f2c91999?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85",
-    treatment: "Regeneração Capilar",
-    duration: "6 meses de tratamento"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/ynaeopcp_37-sobrancelha-protocolo-cills.jpg",
+    treatment: "Regeneração de Sobrancelhas",
+    duration: "Protocolo Cills"
   },
   {
     id: 2,
-    before: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85",
-    after: "https://images.unsplash.com/photo-1604364721460-0cbc5866219d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85",
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/odvgzrcx_34-sobrancelha-protocolo-cills.jpg",
+    treatment: "Regeneração de Sobrancelhas",
+    duration: "Protocolo Cills"
+  },
+  {
+    id: 3,
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/cvm2wqr1_10-cabelo-protocolo-cills.jpg",
+    treatment: "Regeneração Capilar",
+    duration: "Protocolo Cills"
+  },
+  {
+    id: 4,
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/tpvt6ahw_20-cabelo-protocolo-cills.jpg",
+    treatment: "Regeneração Capilar",
+    duration: "Protocolo Cills"
+  },
+  {
+    id: 5,
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/bh93f2vb_barba_03_protocolo_cilss.jpg",
     treatment: "Regeneração de Barba",
-    duration: "4 meses de tratamento"
+    duration: "Protocolo Cills"
   }
 ];
 
