@@ -1,6 +1,7 @@
 # PRD - Studio Batisteli Landing Page
 
 **Data de Criação:** 17 de Dezembro de 2024
+**Última Atualização:** 17 de Dezembro de 2024
 
 ## Problema Original
 Criar uma landing page premium para o Studio Batisteli de regeneração capilar não cirúrgica, especializada no Protocolo Cills. A página deve ter design sofisticado com identidade visual específica (Navy Blue + Gold) e copy emocional focada em conversão.
@@ -20,6 +21,44 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
 - WhatsApp: (11) 97827-3924
 - Instagram: @sbatisteli.regeneracaocapilar
 
+## Localidades com Endereços Completos
+
+### 1. Vila Mariana
+- Endereço: Rua Domingos de Morais, 2781
+- Bairro: Vila Mariana
+- CEP: 04035-001
+- Atendimento: Segunda-Feira, 09:00 às 18:00
+
+### 2. Moema
+- Endereço: Av. Ibirapuera, 2120
+- Bairro: Indianópolis
+- CEP: 04028-001
+- Atendimento: Terça-Feira, 09:00 às 18:00
+
+### 3. Tatuapé
+- Endereço: Rua Bom Sucesso, 220
+- Bairro: Cidade Mãe do Céu
+- CEP: 03305-000
+- Atendimento: Quarta-feira, 09:00 às 18:00
+
+### 4. Perdizes
+- Endereço: Av. Antártica, 675
+- Bairro: Água Branca
+- CEP: 05003-020
+- Atendimento: Quinta-Feira, 09:00 às 18:00
+
+### 5. Paulista
+- Endereço: Rua Manuel da Nóbrega, 354
+- Bairro: Jd. Paulista
+- CEP: 04001-001
+- Atendimento: Sexta-feira, 09:00 às 18:00
+
+### 6. Vila Madalena
+- Endereço: Rua Amália de Noronha, 151
+- Bairro: Pinheiros
+- CEP: 05410-010
+- Atendimento: Sábado, 09:00 às 14:00
+
 ## Estrutura Implementada
 
 ### ✅ Seções Completas (Frontend com Mock Data)
@@ -30,6 +69,7 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
 
 2. **Hero Section**
    - Slogan: "Regeneração capilar que transforma vidas"
+   - Imagem principal: Foto profissional Studio Batisteli
    - Descrição emocional do protocolo
    - 2 CTAs: "Agende sua Avaliação Gratuita" + WhatsApp
    - Imagem circular com borda gold
@@ -52,10 +92,14 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
    - Profissionais Especializados
    - Resultados Comprovados
 
-6. **Localidades**
-   - 6 bairros de SP: Vila Madalena, Vila Mariana, Paulista, Perdizes, Tatuapé, Moema
+6. **Localidades com Endereços Completos**
+   - 6 cards com informações completas:
+     * Endereço completo (rua, número, bairro, CEP)
+     * Dia de atendimento específico
+     * Horário de funcionamento
+     * Telefone de contato
    - Background navy com cards dourados
-   - Destaque para proximidade ao metrô
+   - Layout responsivo em grid
 
 7. **Resultados (Antes/Depois)**
    - 5 imagens reais fornecidas pelo cliente:
@@ -75,7 +119,8 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
    - Animação smooth
 
 10. **Formulário de Contato**
-    - Campos: nome, email, telefone, tratamento, localidade, mensagem
+    - Campos: nome, email, telefone, tratamento, localidade (com dias), mensagem
+    - Seletor de unidade mostra dia de atendimento
     - Botões WhatsApp e Instagram integrados
     - Toast notifications
 
@@ -87,9 +132,10 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
     - Fixo no canto inferior direito
 
 ## Assets Utilizados
-- Logo oficial Studio Batisteli
+- Logo oficial Studio Batisteli (aumentado)
+- Imagem hero: Foto profissional Studio Batisteli
 - 5 imagens reais de resultados (fornecidas pelo cliente)
-- 3 imagens profissionais Unsplash (hero e ambiente)
+- 2 imagens profissionais Unsplash (protocolo e ambiente)
 - Ícones Lucide React
 
 ## Tecnologias
@@ -107,6 +153,8 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
 - ✅ Toast notifications
 - ✅ Hover effects e micro-animations
 - ✅ Layout totalmente responsivo
+- ✅ Cards de localidades com endereços completos e horários
+- ✅ Formulário com dias de atendimento por unidade
 
 ## Próximas Fases
 
@@ -118,7 +166,7 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
 ### P1 - Melhorias
 - [ ] Google Maps com pins das 6 localidades
 - [ ] Galeria expandida de resultados (lightbox)
-- [ ] Sistema de agendamento online
+- [ ] Sistema de agendamento online integrado
 - [ ] Integração com Google Analytics/Meta Pixel
 
 ### P2 - Funcionalidades Avançadas
@@ -128,10 +176,11 @@ Criar uma landing page premium para o Studio Batisteli de regeneração capilar 
 - [ ] Sistema de cupons/promoções
 
 ## Status Atual
-🟢 **MVP Frontend Completo** - Landing page totalmente funcional com design premium, copy emocional e todas as seções solicitadas implementadas com dados mock.
+🟢 **MVP Frontend Completo** - Landing page totalmente funcional com design premium, copy emocional, todas as seções solicitadas, endereços completos das 6 unidades com horários específicos de atendimento.
 
 ## Observações Técnicas
 - Formulário salva dados localmente (toast confirmation)
 - Todas as imagens otimizadas para web
 - SEO-friendly structure
 - Performance otimizada
+- Cada unidade tem dia específico de atendimento visível no formulário
