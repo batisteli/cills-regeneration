@@ -4,7 +4,7 @@ export const heroData = {
   slogan: "Regeneração capilar que transforma vidas",
   subtitle: "Recupere sua autoestima com o exclusivo Protocolo Cills de reconstrução capilar. Sobrancelhas, barba e cabelo com resultados comprovados.",
   ctaText: "Agende sua Avaliação Gratuita",
-  heroImage: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/fwwc3cj9_%40sbatisteli.regeneracaocapilar.jpg"
+  heroImage: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/0oy0y4y6_%40sbatisteli.regeneracaocapilar.jpg"
 };
 
 export const protocolData = {
