@@ -1,34 +1,103 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Studio Batisteli Custom Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Custom Colors */
+:root {
+  --navy: #202a44;
+  --gold: #d4af37;
+  --gold-dark: #b8952f;
 }
 
-.App-link {
-    color: #61dafb;
+.text-navy {
+  color: var(--navy);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.bg-gold {
+  background-color: var(--gold);
+}
+
+.bg-gold-dark {
+  background-color: var(--gold-dark);
+}
+
+.border-navy {
+  border-color: var(--navy);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+.hover\:text-navy:hover {
+  color: var(--navy);
+}
+
+.hover\:bg-navy:hover {
+  background-color: var(--navy);
+}
+
+.hover\:bg-gold-dark:hover {
+  background-color: var(--gold-dark);
+}
+
+/* Font Classes */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.font-montserrat-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+}
+
+/* Smooth Transitions */
+button,
+a,
+.transition-colors,
+.transition-all,
+.transition-shadow {
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
 }
