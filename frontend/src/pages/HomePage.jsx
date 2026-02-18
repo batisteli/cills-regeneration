@@ -498,6 +498,17 @@ export const HomePage = () => {
                 </Button>
                 <Button
                   size="lg"
+                  onClick={() => window.location.href = `mailto:${contactInfo.email}`}
+                  className="w-full bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg justify-start"
+                >
+                  <Send className="mr-3" size={24} />
+                  <div className="text-left">
+                    <div className="text-sm opacity-80">E-mail</div>
+                    <div>{contactInfo.email}</div>
+                  </div>
+                </Button>
+                <Button
+                  size="lg"
                   onClick={() => window.open(contactInfo.instagramUrl, '_blank')}
                   className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-montserrat font-medium text-lg justify-start"
                 >
