@@ -205,7 +205,7 @@ export const testimonialsData = [
     treatment: "Regeneração Capilar",
     text: "Após anos sofrendo com a calvície, encontrei no Studio Batisteli a solução que eu procurava. O Protocolo Cills realmente funciona! Minha autoestima voltou e me sinto renovado.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+    image: "https://images.unsplash.com/photo-1694185749831-442ae46b5446?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwcm9mZXNzaW9uYWwlMjBicmF6aWxpYW4lMjBwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE0Mjc5MTF8MA&ixlib=rb-4.1.0&q=85"
   },
   {
     id: 2,
@@ -277,7 +277,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Barba",
     text: "A barba sempre foi um problema pra mim. Hoje tenho a barba cheia que sempre quis! O Studio é top, ambiente agradável e profissionais excelentes.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+    image: "https://images.unsplash.com/photo-1521817760127-e15c26f67fd2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxjb25maWRlbnQlMjBwcm9mZXNzaW9uYWwlMjBicmF6aWxpYW4lMjBwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE0Mjc5MTF8MA&ixlib=rb-4.1.0&q=85"
   },
   {
     id: 10,
@@ -295,7 +295,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Barba",
     text: "Sempre tive complexo com as falhas na barba. O Studio Batisteli resolveu meu problema! Processo tranquilo, resultado incrível. Vale cada centavo!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+    image: "https://images.pexels.com/photos/33067699/pexels-photo-33067699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 ];
 
