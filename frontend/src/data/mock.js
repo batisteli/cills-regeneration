@@ -232,7 +232,7 @@ export const testimonialsData = [
     treatment: "Regeneração Capilar",
     text: "Estava perdendo as esperanças até conhecer o Studio Batisteli. O Protocolo Cills devolveu meu cabelo e minha confiança. Cada sessão valeu a pena!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/uqsmctbd_09-cabelo-protocolo-cills.jpg"
   },
   {
     id: 5,
@@ -241,7 +241,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Barba",
     text: "Tentei outros tratamentos sem sucesso. O Protocolo Cills foi diferente! Resultados visíveis já na terceira sessão. Equipe atenciosa e profissional.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/fkvbeye1_07-cabelo-protocolo-cills.jpg"
   },
   {
     id: 6,
@@ -250,7 +250,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Sobrancelhas",
     text: "Minha autoestima estava lá embaixo por causa das falhas nas sobrancelhas. Hoje me sinto linda! O Studio Batisteli mudou minha vida. Super recomendo!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/geo0k2z1_28-sobrancelha-protocolo-cills.jpg"
   },
   {
     id: 7,
@@ -259,7 +259,7 @@ export const testimonialsData = [
     treatment: "Regeneração Capilar",
     text: "Mesmo com a idade, consegui recuperar meu cabelo! O tratamento é indolor e os resultados são reais. Melhor investimento que já fiz em mim mesmo.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/dgamjeev_23-cabelo-protocolo-cills.jpg"
   },
   {
     id: 8,
@@ -268,7 +268,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Sobrancelhas",
     text: "Procurei várias clínicas antes de encontrar o Studio Batisteli. A diferença está no atendimento personalizado e na técnica. Resultado perfeito e natural!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/muqac8xp_30-sobrancelha-protocolo-cills.jpg"
   },
   {
     id: 9,
