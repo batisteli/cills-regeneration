@@ -277,7 +277,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Barba",
     text: "A barba sempre foi um problema pra mim. Hoje tenho a barba cheia que sempre quis! O Studio é top, ambiente agradável e profissionais excelentes.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1521817760127-e15c26f67fd2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxjb25maWRlbnQlMjBwcm9mZXNzaW9uYWwlMjBicmF6aWxpYW4lMjBwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE0Mjc5MTF8MA&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/h00asy60_barba_04_protocolo_cills.jpeg"
   },
   {
     id: 10,
@@ -286,7 +286,7 @@ export const testimonialsData = [
     treatment: "Regeneração Capilar",
     text: "Fiz tratamento capilar em outra clínica sem resultado. No Studio Batisteli foi completamente diferente! O Protocolo Cills realmente funciona. Estou muito feliz!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/ei5517ib_pexels-stockphotoartist-1097781.jpg"
   },
   {
     id: 11,
@@ -295,7 +295,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Barba",
     text: "Sempre tive complexo com as falhas na barba. O Studio Batisteli resolveu meu problema! Processo tranquilo, resultado incrível. Vale cada centavo!",
     rating: 5,
-    image: "https://images.pexels.com/photos/33067699/pexels-photo-33067699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/vt2gp2zg_pexels-olha-ruskykh-7504872.jpg"
   }
 ];
 
