@@ -26,21 +26,21 @@ export const servicesData = [
     title: "Regeneração de Sobrancelhas",
     description: "Recupere sobrancelhas falhadas ou ralas com o Protocolo Cills. Resultados naturais e permanentes.",
     icon: "Sparkles",
-    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/ynaeopcp_37-sobrancelha-protocolo-cills.jpg"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/o61cmiwe_pexels-krivitskiy-10561020%20-%20Copia.jpg"
   },
   {
     id: 2,
     title: "Regeneração de Barba",
     description: "Preencha falhas na barba e conquiste a aparência que sempre desejou. Tratamento masculino especializado.",
     icon: "User",
-    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/bh93f2vb_barba_03_protocolo_cilss.jpg"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/f88v4805_%40studiobatisteli.regeneracaocapilar04.jpg"
   },
   {
     id: 3,
     title: "Regeneração Capilar",
     description: "Recupere áreas com rarefação capilar ou calvície. Protocolo eficaz para homens e mulheres.",
     icon: "Zap",
-    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/cvm2wqr1_10-cabelo-protocolo-cills.jpg"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/ddyae38y_%40studiobatisteli.regeneracaocapilar06.jpg"
   }
 ];
 
