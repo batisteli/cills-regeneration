@@ -665,6 +665,10 @@ export const HomePage = () => {
                   {contactInfo.whatsappFormatted}
                 </li>
                 <li className="flex items-center">
+                  <Send size={18} className="mr-2 text-gold" />
+                  {contactInfo.email}
+                </li>
+                <li className="flex items-center">
                   <Instagram size={18} className="mr-2 text-gold" />
                   {contactInfo.instagram}
                 </li>
