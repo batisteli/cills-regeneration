@@ -416,7 +416,7 @@ export const HomePage = () => {
       {/* CTA after Results */}
       <CTASection 
         title="Esses Resultados Podem Ser Seus Também!" 
-        subtitle="Avaliação 100% gratuita. Sem compromisso. Agende hoje mesmo!" 
+        subtitle="Avaliação 100% gratuita. Agende hoje mesmo!" 
       />
 
       {/* Testimonials Section with Carousel */}
@@ -487,7 +487,7 @@ export const HomePage = () => {
       {/* CTA after Testimonials */}
       <CTASection 
         title="Junte-se aos Nossos Clientes Satisfeitos!" 
-        subtitle="Comece sua transformação hoje. Avaliação gratuita e sem compromisso!" 
+        subtitle="Comece sua transformação hoje. Avaliação gratuita!" 
       />
 
       {/* FAQ Section */}
