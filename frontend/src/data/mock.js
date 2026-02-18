@@ -211,7 +211,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Sobrancelhas",
     text: "Sempre sofri com sobrancelhas falhadas. O atendimento foi impecável e os resultados surpreendentes. Finalmente tenho as sobrancelhas que sempre sonhei!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/c235k4w4_34-sobrancelha-protocolo-cills.jpg"
   },
   {
     id: 3,
