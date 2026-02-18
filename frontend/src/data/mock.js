@@ -220,7 +220,7 @@ export const testimonialsData = [
     treatment: "Regeneração de Barba",
     text: "A equipe é extremamente profissional e o resultado superou minhas expectativas. Hoje posso usar a barba que sempre quis. Recomendo de olhos fechados!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1604364721460-0cbc5866219d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/q8e7qamx_%40sbatisteli.regeneracaocapilar1.jpg"
   }
 ];
 
