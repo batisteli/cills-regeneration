@@ -67,18 +67,36 @@ export const HomePage = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    toast.success('Mensagem enviada com sucesso! Em breve entraremos em contato.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      location: '',
-      message: ''
-    });
+    
+    try {
+      const API_URL = process.env.REACT_APP_BACKEND_URL;
+      const response = await fetch(`${API_URL}/api/schedule-evaluation`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Erro ao enviar formulário');
+      }
+      
+      toast.success('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        location: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
+    }
   };
 
   const scrollToContact = () => {
