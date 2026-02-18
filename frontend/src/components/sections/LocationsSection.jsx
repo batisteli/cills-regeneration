@@ -5,11 +5,6 @@ import { Button } from '../ui/button';
 import { locationsData, contactInfo } from '../../data/mock';
 
 export const LocationsSection = ({ scrollToContact }) => {
-  const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.');
-    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');
-  };
-
   return (
     <section id="localidades" className="py-20 px-4 sm:px-6 lg:px-8 bg-navy text-white" data-testid="locations-section">
       <div className="max-w-7xl mx-auto">
@@ -61,11 +56,10 @@ export const LocationsSection = ({ scrollToContact }) => {
           </p>
           <Button 
             size="lg"
-            onClick={openWhatsApp}
+            onClick={scrollToContact}
             data-testid="locations-cta-btn"
             className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
           >
-            <Phone className="mr-2" size={20} />
             Escolher Minha Unidade
           </Button>
         </div>
