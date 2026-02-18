@@ -7,6 +7,11 @@ import { locationsData, contactInfo } from '../../data/mock';
 export const Header = ({ scrollToContact }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const openWhatsApp = () => {
+    const message = encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.');
+    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50" data-testid="header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,7 +31,7 @@ export const Header = ({ scrollToContact }) => {
             <a href="#localidades" className="text-gray-700 hover:text-navy transition-colors font-montserrat">Localidades</a>
             <a href="#depoimentos" className="text-gray-700 hover:text-navy transition-colors font-montserrat">Depoimentos</a>
             <Button 
-              onClick={scrollToContact}
+              onClick={openWhatsApp}
               data-testid="header-cta-btn"
               className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium"
             >
@@ -52,7 +57,7 @@ export const Header = ({ scrollToContact }) => {
             <a href="#localidades" className="block text-gray-700 hover:text-navy transition-colors font-montserrat">Localidades</a>
             <a href="#depoimentos" className="block text-gray-700 hover:text-navy transition-colors font-montserrat">Depoimentos</a>
             <Button 
-              onClick={scrollToContact}
+              onClick={openWhatsApp}
               className="w-full bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium"
             >
               Agendar Avaliação

@@ -27,10 +27,11 @@ export const HeroSection = ({ scrollToContact }) => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                onClick={scrollToContact}
+                onClick={openWhatsApp}
                 data-testid="hero-cta-btn"
                 className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
               >
+                <Phone className="mr-2" size={20} />
                 {heroData.ctaText}
               </Button>
               <Button 
