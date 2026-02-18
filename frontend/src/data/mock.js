@@ -17,7 +17,7 @@ export const protocolData = {
     "Técnica cientificamente comprovada",
     "Tratamento personalizado para cada caso"
   ],
-  image: "https://images.unsplash.com/photo-1707812343087-c9ff9e5abb43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHw0fHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+  image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/uvuglt5f_%40sbatisteli.regeneacaocapilar.jpg"
 };
 
 export const servicesData = [
@@ -254,6 +254,7 @@ export const faqData = [
 export const contactInfo = {
   whatsapp: "5511978273924",
   whatsappFormatted: "(11) 97827-3924",
+  email: "studiobatisteli@gmail.com",
   instagram: "@sbatisteli.regeneracaocapilar",
   instagramUrl: "https://instagram.com/sbatisteli.regeneracaocapilar"
 };
