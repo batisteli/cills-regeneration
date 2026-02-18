@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Sparkles, User, Zap, CheckCircle, CreditCard, Heart, 
   MapPin, Award, Star, Phone, Instagram, Send, Menu, X 
@@ -13,7 +14,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '../components/ui/accordion';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '../components/ui/carousel';
 import { toast } from 'sonner';
+import CTASection from '../components/CTASection';
 import {
   heroData,
   protocolData,
