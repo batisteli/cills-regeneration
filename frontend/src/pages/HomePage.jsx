@@ -731,10 +731,20 @@ export const HomePage = () => {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 font-montserrat-light">
-              © 2024 Studio Batisteli. Todos os direitos reservados.
-            </p>
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 font-montserrat-light mb-4 md:mb-0">
+                © 2024 Studio Batisteli. Todos os direitos reservados.
+              </p>
+              <div className="flex gap-6">
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-gold font-montserrat-light transition-colors">
+                  Política de Privacidade
+                </Link>
+                <Link to="/terms-conditions" className="text-gray-400 hover:text-gold font-montserrat-light transition-colors">
+                  Termos e Condições
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
