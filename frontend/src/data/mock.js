@@ -26,7 +26,7 @@ export const servicesData = [
     title: "Regeneração de Sobrancelhas",
     description: "Recupere sobrancelhas falhadas ou ralas com o Protocolo Cills. Resultados naturais e permanentes.",
     icon: "Sparkles",
-    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/o61cmiwe_pexels-krivitskiy-10561020%20-%20Copia.jpg"
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/tkj74b3e_Design%20sem%20nome%20%282%29.png"
   },
   {
     id: 2,
