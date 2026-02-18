@@ -239,6 +239,12 @@ export const HomePage = () => {
         </div>
       </section>
 
+      {/* CTA after Services */}
+      <CTASection 
+        title="Descubra qual Tratamento é Ideal para Você" 
+        subtitle="Avaliação gratuita com profissionais especializados. Agende agora!" 
+      />
+
       {/* Protocol Section */}
       <section id="protocolo" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
