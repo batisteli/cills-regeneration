@@ -185,6 +185,12 @@ export const beforeAfterData = [
     image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/bh93f2vb_barba_03_protocolo_cilss.jpg",
     treatment: "Regeneração de Barba",
     duration: "Protocolo Cills"
+  },
+  {
+    id: 6,
+    image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/4x5e8to3_barba_01_protocolo_cilss.jpg",
+    treatment: "Regeneração de Barba",
+    duration: "Protocolo Cills"
   }
 ];
 
