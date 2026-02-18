@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button } from './ui/button';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Phone } from 'lucide-react';
 
 export const CTASection = ({ title, subtitle }) => {
-  const scrollToContact = () => {
-    document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
+  const openWhatsApp = () => {
+    const message = encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.');
+    window.open(`https://wa.me/5511978273924?text=${message}`, '_blank');
   };
 
   return (
@@ -24,15 +25,16 @@ export const CTASection = ({ title, subtitle }) => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            onClick={scrollToContact}
-            className="bg-navy hover:bg-navy/90 text-white font-montserrat font-medium text-lg px-10 py-7 shadow-lg hover:shadow-xl transition-all duration-300"
+            onClick={openWhatsApp}
+            data-testid="cta-whatsapp-btn"
+            className="bg-green-600 hover:bg-green-700 text-white font-montserrat font-medium text-lg px-10 py-7 shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            <Sparkles className="mr-2" size={24} />
-            Avaliação 100% Gratuita
+            <Phone className="mr-2" size={24} />
+            AGENDE SUA AVALIAÇÃO GRATUITA
           </Button>
         </div>
         <p className="text-sm text-gray-500 font-montserrat-light mt-4">
-          ✓ Sem compromisso  ✓ Atendimento personalizado  ✓ Próximo ao metrô
+          ✓ Atendimento personalizado  ✓ Próximo ao metrô
         </p>
       </div>
     </div>
