@@ -199,17 +199,29 @@ export const HomePage = () => {
             {servicesData.map((service) => {
               const IconComponent = iconMap[service.icon];
               return (
-                <Card key={service.id} className="border-2 border-gray-100 hover:border-gold transition-all duration-300 hover:shadow-lg">
-                  <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <IconComponent size={32} className="text-gold" />
+                <Card key={service.id} className="border-2 border-gray-100 hover:border-gold transition-all duration-300 hover:shadow-lg overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="relative h-64 overflow-hidden">
+                      <img 
+                        src={service.image} 
+                        alt={service.title} 
+                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center mb-3">
+                          <IconComponent size={24} className="text-navy" />
+                        </div>
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-montserrat font-medium text-navy mb-4">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 font-montserrat-light leading-relaxed">
-                      {service.description}
-                    </p>
+                    <div className="p-8">
+                      <h3 className="text-2xl font-montserrat font-medium text-navy mb-4">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 font-montserrat-light leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
                   </CardContent>
                 </Card>
               );
