@@ -27,7 +27,7 @@ export const CTASection = ({ title, subtitle }) => {
             size="lg"
             onClick={openWhatsApp}
             data-testid="cta-whatsapp-btn"
-            className="bg-green-600 hover:bg-green-700 text-white font-montserrat font-medium text-lg px-10 py-7 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-10 py-7 shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <Phone className="mr-2" size={24} />
             AGENDE SUA AVALIAÇÃO GRATUITA

@@ -23,7 +23,7 @@ export const LocationsSection = ({ scrollToContact }) => {
                 <div className="flex items-start mb-4">
                   <MapPin size={28} className="text-gold mr-3 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-2xl font-montserrat font-medium mb-3">
+                    <h3 className="text-2xl font-montserrat font-medium mb-3 text-gold">
                       {location.name}
                     </h3>
                     <div className="space-y-2 text-gray-200 font-montserrat-light">
