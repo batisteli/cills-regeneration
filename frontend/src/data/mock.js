@@ -224,6 +224,78 @@ export const testimonialsData = [
     text: "A equipe é extremamente profissional e o resultado superou minhas expectativas. Hoje posso usar a barba que sempre quis. Recomendo de olhos fechados!",
     rating: 5,
     image: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/q8e7qamx_%40sbatisteli.regeneracaocapilar1.jpg"
+  },
+  {
+    id: 4,
+    name: "Ana Paula Ferreira",
+    age: 38,
+    treatment: "Regeneração Capilar",
+    text: "Estava perdendo as esperanças até conhecer o Studio Batisteli. O Protocolo Cills devolveu meu cabelo e minha confiança. Cada sessão valeu a pena!",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 5,
+    name: "Carlos Eduardo",
+    age: 45,
+    treatment: "Regeneração de Barba",
+    text: "Tentei outros tratamentos sem sucesso. O Protocolo Cills foi diferente! Resultados visíveis já na terceira sessão. Equipe atenciosa e profissional.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 6,
+    name: "Juliana Santos",
+    age: 31,
+    treatment: "Regeneração de Sobrancelhas",
+    text: "Minha autoestima estava lá embaixo por causa das falhas nas sobrancelhas. Hoje me sinto linda! O Studio Batisteli mudou minha vida. Super recomendo!",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 7,
+    name: "Roberto Almeida",
+    age: 50,
+    treatment: "Regeneração Capilar",
+    text: "Mesmo com a idade, consegui recuperar meu cabelo! O tratamento é indolor e os resultados são reais. Melhor investimento que já fiz em mim mesmo.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 8,
+    name: "Camila Rodrigues",
+    age: 27,
+    treatment: "Regeneração de Sobrancelhas",
+    text: "Procurei várias clínicas antes de encontrar o Studio Batisteli. A diferença está no atendimento personalizado e na técnica. Resultado perfeito e natural!",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 9,
+    name: "Fernando Lima",
+    age: 39,
+    treatment: "Regeneração de Barba",
+    text: "A barba sempre foi um problema pra mim. Hoje tenho a barba cheia que sempre quis! O Studio é top, ambiente agradável e profissionais excelentes.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 10,
+    name: "Patricia Mendes",
+    age: 33,
+    treatment: "Regeneração Capilar",
+    text: "Fiz tratamento capilar em outra clínica sem resultado. No Studio Batisteli foi completamente diferente! O Protocolo Cills realmente funciona. Estou muito feliz!",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxoYWlyJTIwdHJlYXRtZW50fGVufDB8fHx8MTc3MTM2NDY1NHww&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 11,
+    name: "Lucas Martins",
+    age: 28,
+    treatment: "Regeneração de Barba",
+    text: "Sempre tive complexo com as falhas na barba. O Studio Batisteli resolveu meu problema! Processo tranquilo, resultado incrível. Vale cada centavo!",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1672072962389-16b0925938b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBwZXJzb258ZW58MHx8fHwxNzcxMzY0NjUxfDA&ixlib=rb-4.1.0&q=85"
   }
 ];
 
