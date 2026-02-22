@@ -15,7 +15,7 @@ export const Header = ({ scrollToContact }) => {
           <img 
             src="https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/78rw88ra_stbt-logo-hz-1.png" 
             alt="Studio Batisteli Logo" 
-            className="h-12 md:h-14"
+            className="h-[80px]"
           />
         </div>
         
