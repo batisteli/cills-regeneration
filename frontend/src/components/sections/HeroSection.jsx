@@ -52,25 +52,11 @@ export const HeroSection = ({ scrollToContact }) => {
             </div>
           </div>
           
-          {/* Elegant Image Collage - 2x2 Grid + 1 large */}
+          {/* Elegant Image Collage - 2x2 Grid */}
           <div className="relative flex items-center justify-center">
             <div className="grid grid-cols-2 gap-4 w-full max-w-lg">
-              {/* Row 1: Clinic image spanning full width */}
-              <div className="col-span-2 relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[200px]">
-                <img 
-                  src={heroImages.clinic} 
-                  alt="Tratamento Protocolo CILLS" 
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  loading="eager"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 bg-white/90 text-navy text-sm px-3 py-1 rounded-full font-montserrat font-medium">
-                  Protocolo CILLS
-                </div>
-              </div>
-              
-              {/* Row 2: Before */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[200px]">
+              {/* Row 1: Before and After */}
+              <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.manBefore} 
                   alt="Antes do tratamento" 
@@ -81,8 +67,7 @@ export const HeroSection = ({ scrollToContact }) => {
                 </div>
               </div>
               
-              {/* Row 2: After */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[200px]">
+              <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.manAfter} 
                   alt="Depois do tratamento" 
@@ -93,8 +78,8 @@ export const HeroSection = ({ scrollToContact }) => {
                 </div>
               </div>
               
-              {/* Row 3: Women */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[180px]">
+              {/* Row 2: Women */}
+              <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.woman1} 
                   alt="Cliente satisfeita" 
@@ -102,7 +87,7 @@ export const HeroSection = ({ scrollToContact }) => {
                 />
               </div>
               
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[180px]">
+              <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.woman2} 
                   alt="Confiança renovada" 
