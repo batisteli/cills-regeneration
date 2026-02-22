@@ -18,9 +18,9 @@ export const Header = ({ scrollToContact }) => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <img 
-              src="https://customer-assets.emergentagent.com/job_b266a66b-ea52-4f2f-aa90-40c1e4e5fce9/artifacts/opzjbdhi_LOGO01.png" 
+              src="https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/78rw88ra_stbt-logo-hz-1.png" 
               alt="Studio Batisteli Logo" 
-              className="h-20 md:h-24"
+              className="h-14 md:h-16"
             />
           </div>
           
