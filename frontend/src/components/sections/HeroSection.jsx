@@ -13,7 +13,7 @@ export const HeroSection = ({ scrollToContact }) => {
   const heroImages = {
     manAfter: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/o6ouq4yw_stbt-img-man-after.png",
     manBefore: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/1bbxniod_stbt-img-man-before.png",
-    clinic: "https://images.pexels.com/photos/29648642/pexels-photo-29648642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    clinic: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/cnht8w2c_stbt-img-tecnica-examinando.png",
     woman1: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/k01vufh0_stbt-woman-4.png",
     woman2: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/r54mshag_stbt-woman-5.png"
   };
