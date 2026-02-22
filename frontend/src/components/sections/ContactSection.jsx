@@ -82,43 +82,52 @@ export const ContactSection = () => {
               Preencha o formulário ao lado ou entre em contato diretamente pelo WhatsApp. 
               Nossa equipe está pronta para atendê-lo e responder todas as suas dúvidas.
             </p>
-            <div className="space-y-6">
-              <Button
-                size="lg"
-                onClick={openWhatsApp}
+            <div className="space-y-4">
+              <a
+                href={`https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.')}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 data-testid="contact-whatsapp-btn"
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-montserrat font-medium text-lg justify-start"
+                className="flex items-center p-4 rounded-xl border-2 border-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-300 group"
               >
-                <Phone className="mr-3" size={24} />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">WhatsApp</div>
-                  <div>{contactInfo.whatsappFormatted}</div>
+                <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mr-4 group-hover:bg-gold/30 transition-colors">
+                  <Phone className="text-gold" size={24} />
                 </div>
-              </Button>
-              <Button
-                size="lg"
-                onClick={() => window.location.href = `mailto:${contactInfo.email}`}
+                <div className="text-left">
+                  <div className="text-sm text-gold font-montserrat font-medium">WhatsApp</div>
+                  <div className="text-white font-montserrat">{contactInfo.whatsappFormatted}</div>
+                </div>
+              </a>
+              
+              <a
+                href={`mailto:${contactInfo.email}`}
                 data-testid="contact-email-btn"
-                className="w-full bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg justify-start"
+                className="flex items-center p-4 rounded-xl border-2 border-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-300 group"
               >
-                <Send className="mr-3" size={24} />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">E-mail</div>
-                  <div>{contactInfo.email}</div>
+                <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mr-4 group-hover:bg-gold/30 transition-colors">
+                  <Send className="text-gold" size={24} />
                 </div>
-              </Button>
-              <Button
-                size="lg"
-                onClick={() => window.open(contactInfo.instagramUrl, '_blank')}
+                <div className="text-left">
+                  <div className="text-sm text-gold font-montserrat font-medium">E-mail</div>
+                  <div className="text-white font-montserrat">{contactInfo.email}</div>
+                </div>
+              </a>
+              
+              <a
+                href={contactInfo.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 data-testid="contact-instagram-btn"
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-montserrat font-medium text-lg justify-start"
+                className="flex items-center p-4 rounded-xl border-2 border-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-300 group"
               >
-                <Instagram className="mr-3" size={24} />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">Instagram</div>
-                  <div>{contactInfo.instagram}</div>
+                <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mr-4 group-hover:bg-gold/30 transition-colors">
+                  <Instagram className="text-gold" size={24} />
                 </div>
-              </Button>
+                <div className="text-left">
+                  <div className="text-sm text-gold font-montserrat font-medium">Instagram</div>
+                  <div className="text-white font-montserrat">{contactInfo.instagram}</div>
+                </div>
+              </a>
             </div>
           </div>
           <Card className="bg-white">
