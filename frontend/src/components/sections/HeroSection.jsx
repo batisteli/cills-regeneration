@@ -10,19 +10,24 @@ export const HeroSection = ({ scrollToContact }) => {
   };
 
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+    <section className="pt-[140px] pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="font-montserrat text-navy block">STUDIO</span>
-              <span className="font-cinzel text-navy block">BATISTELI</span>
+          <div className="pt-[40px]">
+            <h1 className="text-3xl md:text-4xl font-montserrat font-medium mb-6" style={{ color: '#0E1A24' }}>
+              Falhas, afinamento e queda não precisam definir sua imagem
             </h1>
-            <p className="text-3xl md:text-4xl text-gold font-montserrat font-medium mb-6">
-              {heroData.slogan}
+            <p className="text-3xl md:text-4xl text-gold font-montserrat font-medium mb-2">
+              Regeneração Capilar
             </p>
-            <p className="text-lg text-gray-700 font-montserrat-light mb-8 leading-relaxed">
-              {heroData.subtitle}
+            <p className="text-2xl md:text-3xl text-gold font-montserrat font-medium mb-6">
+              + Autoestima + Confiança
+            </p>
+            <p className="text-lg text-gray-700 font-montserrat-light mb-6 leading-relaxed">
+              Recupere densidade onde o fio está falhando — com um protocolo não cirúrgico de estimulação biológica.
+            </p>
+            <p className="text-base text-gray-600 font-montserrat-light mb-8 leading-relaxed">
+              O Protocolo CILLS (Cell Induction & Localized Stimulation System) combina indução celular controlada, estimulação vascular e ativos bioestimulantes para reativar o ambiente do folículo e apoiar o crescimento progressivo de fios mais fortes — no cabelo, barba e sobrancelhas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
