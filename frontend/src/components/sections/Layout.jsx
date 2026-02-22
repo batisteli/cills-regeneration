@@ -7,41 +7,31 @@ import { locationsData, contactInfo } from '../../data/mock';
 export const Header = ({ scrollToContact }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.');
-    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');
-  };
-
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50" data-testid="header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <div className="flex items-center">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/78rw88ra_stbt-logo-hz-1.png" 
-              alt="Studio Batisteli Logo" 
-              className="h-14 md:h-16"
-            />
-          </div>
-          
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#protocolo" className="text-gray-700 hover:text-navy transition-colors font-montserrat">Protocolo</a>
-            <a href="#beneficios" className="text-gray-700 hover:text-navy transition-colors font-montserrat">Benefícios</a>
-            <a href="#localidades" className="text-gray-700 hover:text-navy transition-colors font-montserrat">Localidades</a>
-            <a href="#depoimentos" className="text-gray-700 hover:text-navy transition-colors font-montserrat">Depoimentos</a>
-            <Button 
-              onClick={openWhatsApp}
-              data-testid="header-cta-btn"
-              className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium"
-            >
-              Agendar Avaliação
-            </Button>
-          </nav>
+        {/* Logo centered */}
+        <div className="flex justify-center items-center pt-4 pb-2">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/78rw88ra_stbt-logo-hz-1.png" 
+            alt="Studio Batisteli Logo" 
+            className="h-12 md:h-14"
+          />
+        </div>
+        
+        {/* Desktop Menu - centered below logo */}
+        <nav className="hidden md:flex justify-center items-center space-x-8 pb-3">
+          <a href="#protocolo" className="text-gray-700 hover:text-gold transition-colors font-montserrat">Protocolo</a>
+          <a href="#beneficios" className="text-gray-700 hover:text-gold transition-colors font-montserrat">Benefícios</a>
+          <a href="#localidades" className="text-gray-700 hover:text-gold transition-colors font-montserrat">Localidades</a>
+          <a href="#depoimentos" className="text-gray-700 hover:text-gold transition-colors font-montserrat">Depoimentos</a>
+          <a href="#contato" className="text-gray-700 hover:text-gold transition-colors font-montserrat">Contato</a>
+        </nav>
 
-          {/* Mobile Menu Button */}
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex justify-center pb-2">
           <button 
-            className="md:hidden text-navy"
+            className="text-navy"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             data-testid="mobile-menu-btn"
           >
@@ -51,17 +41,12 @@ export const Header = ({ scrollToContact }) => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 space-y-4 border-t" data-testid="mobile-menu">
-            <a href="#protocolo" className="block text-gray-700 hover:text-navy transition-colors font-montserrat">Protocolo</a>
-            <a href="#beneficios" className="block text-gray-700 hover:text-navy transition-colors font-montserrat">Benefícios</a>
-            <a href="#localidades" className="block text-gray-700 hover:text-navy transition-colors font-montserrat">Localidades</a>
-            <a href="#depoimentos" className="block text-gray-700 hover:text-navy transition-colors font-montserrat">Depoimentos</a>
-            <Button 
-              onClick={openWhatsApp}
-              className="w-full bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium"
-            >
-              Agendar Avaliação
-            </Button>
+          <nav className="md:hidden py-4 space-y-4 border-t text-center" data-testid="mobile-menu">
+            <a href="#protocolo" className="block text-gray-700 hover:text-gold transition-colors font-montserrat">Protocolo</a>
+            <a href="#beneficios" className="block text-gray-700 hover:text-gold transition-colors font-montserrat">Benefícios</a>
+            <a href="#localidades" className="block text-gray-700 hover:text-gold transition-colors font-montserrat">Localidades</a>
+            <a href="#depoimentos" className="block text-gray-700 hover:text-gold transition-colors font-montserrat">Depoimentos</a>
+            <a href="#contato" className="block text-gray-700 hover:text-gold transition-colors font-montserrat">Contato</a>
           </nav>
         )}
       </div>
