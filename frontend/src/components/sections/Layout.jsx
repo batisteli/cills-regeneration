@@ -67,9 +67,9 @@ export const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <img 
-                src="https://customer-assets.emergentagent.com/job_b266a66b-ea52-4f2f-aa90-40c1e4e5fce9/artifacts/opzjbdhi_LOGO01.png" 
+                src="https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/opazm8r0_stbt-img-logotipo-vertical-no-lettring.png" 
                 alt="Studio Batisteli Logo" 
-                className="h-16 mb-4 brightness-0 invert"
+                className="h-32 mb-6"
               />
               <p className="text-gray-400 font-montserrat-light leading-relaxed">
                 Especialistas em regeneração capilar não cirúrgica. 
