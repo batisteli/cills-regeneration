@@ -52,44 +52,49 @@ export const HeroSection = ({ scrollToContact }) => {
             </div>
           </div>
           
-          {/* Elegant Image Collage - Centered Vertically */}
+          {/* Elegant Image Collage - 2x2 Grid + 1 large */}
           <div className="relative flex items-center justify-center">
-            <div className="grid grid-cols-2 gap-3 w-full max-w-lg">
-              {/* Row 1: Clinic image (large) */}
-              <div className="col-span-2 relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/30 group h-[220px]">
+            <div className="grid grid-cols-2 gap-4 w-full max-w-lg">
+              {/* Row 1: Clinic image spanning full width */}
+              <div className="col-span-2 relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[200px]">
                 <img 
                   src={heroImages.clinic} 
                   alt="Tratamento Protocolo CILLS" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 bg-white/90 text-navy text-sm px-3 py-1 rounded-full font-montserrat font-medium">
+                  Protocolo CILLS
+                </div>
               </div>
               
-              {/* Row 2: Before and After side by side */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/30 group h-[180px]">
+              {/* Row 2: Before */}
+              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[200px]">
                 <img 
                   src={heroImages.manBefore} 
                   alt="Antes do tratamento" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-2 left-2 bg-navy/90 text-white text-xs px-3 py-1 rounded-full font-montserrat font-medium">
+                <div className="absolute bottom-3 left-3 bg-navy text-white text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
                   Antes
                 </div>
               </div>
               
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/30 group h-[180px]">
+              {/* Row 2: After */}
+              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[200px]">
                 <img 
                   src={heroImages.manAfter} 
                   alt="Depois do tratamento" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-2 left-2 bg-gold text-navy text-xs px-3 py-1 rounded-full font-montserrat font-medium">
+                <div className="absolute bottom-3 left-3 bg-gold text-navy text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
                   Depois
                 </div>
               </div>
               
-              {/* Row 3: Two women */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/30 group h-[160px]">
+              {/* Row 3: Women */}
+              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[180px]">
                 <img 
                   src={heroImages.woman1} 
                   alt="Cliente satisfeita" 
@@ -97,7 +102,7 @@ export const HeroSection = ({ scrollToContact }) => {
                 />
               </div>
               
-              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/30 group h-[160px]">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-gold/40 group h-[180px]">
                 <img 
                   src={heroImages.woman2} 
                   alt="Confiança renovada" 
@@ -107,8 +112,8 @@ export const HeroSection = ({ scrollToContact }) => {
             </div>
             
             {/* Decorative elements */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gold rounded-full opacity-20 blur-2xl"></div>
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-navy rounded-full opacity-10 blur-2xl"></div>
+            <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-gold rounded-full opacity-20 blur-3xl"></div>
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-navy rounded-full opacity-10 blur-3xl"></div>
           </div>
         </div>
       </div>
