@@ -34,16 +34,6 @@ export const HeroSection = ({ scrollToContact }) => {
                 <Phone className="mr-2" size={20} />
                 {heroData.ctaText}
               </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                onClick={openWhatsApp}
-                data-testid="hero-whatsapp-btn"
-                className="border-2 border-navy text-navy hover:bg-navy hover:text-white font-montserrat font-medium text-lg px-8 py-6"
-              >
-                <Phone className="mr-2" size={20} />
-                WhatsApp
-              </Button>
             </div>
           </div>
           <div className="relative">
