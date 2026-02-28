@@ -29,7 +29,7 @@ export const HomePage = () => {
 
       <CTASection 
         title="Descubra qual Tratamento é Ideal para Você" 
-        subtitle="Agende agora a sua avaliação com um especialista. 
+        subtitle="Agende agora a sua avaliação com um especialista." 
       />
 
       <ProtocolSection />
@@ -40,18 +40,17 @@ export const HomePage = () => {
 
       <ResultsSection />
 
-      <CTASection 
-        title="Esses Resultados Podem Ser Seus Também!" 
-        subtitle="Agende A Sua Avaliação Já!" 
+     <CTASection
+      title="Esses resultados podem ser seus também!"
+      subtitle="Agende a sua avaliação já!"
       />
-
-      <TestimonialsSection />
-
-      <CTASection 
-        title="Junte-se aos Nossos Clientes Satisfeitos!" 
-        subtitle="A sua Transformação Começa Agora. Agende a sua consulta" 
-      />
-
+      
+      <testimonialssection />
+      <CTASection
+        title="Junte-se aos nossos clientes satisfeitos!"
+        subtitle="A sua transformação começa agora. Agende a sua avaliação"
+        />
+            
       <FAQSection />
 
       <ContactSection />
