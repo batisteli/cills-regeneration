@@ -40,15 +40,17 @@ export const HomePage = () => {
 
       <ResultsSection />
 
+     <CTASection
+      title="Esses resultados podem ser seus também!"
+      subtitle="Agende a sua avaliação já!"
+      />
+      
+      <testimonialssection />
       <CTASection
-  title="Esses resultados podem ser seus também!"
-  subtitle="Agende a sua avaliação já!"
-/>
-
-<CTASection
-  title="Junte-se aos nossos clientes satisfeitos!"
-  subtitle="A sua transformação começa agora. Agende a sua avaliação."
-/>
+        title="Junte-se aos nossos clientes satisfeitos!"
+        subtitle="A sua transformação começa agora. Agende a sua avaliação"
+        />
+            
       <FAQSection />
 
       <ContactSection />
