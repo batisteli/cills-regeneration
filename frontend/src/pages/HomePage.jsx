@@ -48,7 +48,7 @@ export const HomePage = () => {
       <TestimonialsSection />
 
       <CTASection 
-        title="Junte-se aos Nossos Clientes Satisfeitos!" 
+        title="Junte-se aos Nossos Clientes Satisfeitos!"
         subtitle="A sua Transformação Começa Agora. Agende a sua consulta" 
       />
 
