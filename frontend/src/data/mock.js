@@ -47,8 +47,8 @@ export const servicesData = [
 export const advantagesData = [
   {
     id: 1,
-    title: "Avaliação Gratuita",
-    description: "Conheça o protocolo e receba um diagnóstico completo sem compromisso.",
+    title: "Avaliação",
+    description: "Agende a Sua Sessão de Avalição e conheça em detalhes o protocolo",
     icon: "CheckCircle"
   },
   {
