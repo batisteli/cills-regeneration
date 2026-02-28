@@ -29,7 +29,7 @@ export const HomePage = () => {
 
       <CTASection 
         title="Descubra qual Tratamento é Ideal para Você" 
-        subtitle="Avaliação gratuita com profissionais especializados. Agende agora!" 
+        subtitle="Agende agora a sua avaliação com um especialista. 
       />
 
       <ProtocolSection />
