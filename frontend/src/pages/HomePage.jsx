@@ -42,14 +42,14 @@ export const HomePage = () => {
 
       <CTASection 
         title="Esses Resultados Podem Ser Seus Também!" 
-        subtitle="Avaliação 100% gratuita. Agende hoje mesmo!" 
+        subtitle="Agende A Sua Avaliação Já!" 
       />
 
       <TestimonialsSection />
 
       <CTASection 
         title="Junte-se aos Nossos Clientes Satisfeitos!" 
-        subtitle="Comece sua transformação hoje. Avaliação gratuita!" 
+        subtitle="A sua Transformação Começa Agora. Agende a sua consulta" 
       />
 
       <FAQSection />
