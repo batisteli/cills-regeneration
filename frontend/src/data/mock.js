@@ -3,7 +3,7 @@
 export const heroData = {
   slogan: "Regeneração capilar que transforma vidas",
   subtitle: "Recupere sua autoestima com o exclusivo Protocolo Cills de reconstrução capilar. Sobrancelhas, barba e cabelo com resultados comprovados.",
-  ctaText: "Agende sua Avaliação Gratuita",
+  ctaText: "Agende A Sua Avaliação Já!",
   heroImage: "https://customer-assets.emergentagent.com/job_protocolo-cills/artifacts/one21ogt_Design%20sem%20nome%20%281%29.png"
 };
 
@@ -328,7 +328,7 @@ export const faqData = [
   {
     id: 6,
     question: "O protocolo funciona para qualquer idade?",
-    answer: "Sim! O Protocolo Cills pode ser aplicado em homens e mulheres adultos de todas as idades. Durante a avaliação gratuita, nossa equipe verifica as condições específicas de cada pessoa."
+    answer: "Sim! O Protocolo Cills pode ser aplicado em homens e mulheres adultos de todas as idades. Durante a avaliação a nossa equipe verifica as condições específicas de cada pessoa."
   }
 ];
 
