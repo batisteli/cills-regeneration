@@ -1,140 +1,98 @@
-import React, { useState } from 'react';
-import { Phone, Send, Instagram } from 'lucide-react';
-import { Button } from '../ui/button';
-import { Card, CardContent } from '../ui/card';
-import { Input } from '../ui/input';
-import { Textarea } from '../ui/textarea';
-import { toast } from 'sonner';
-import { contactInfo, formOptions } from '../../data/mock';
+import React from "react";
+import { Phone, Mail, Instagram } from "lucide-react";
+import { Card, CardContent } from "../ui/card";
 
 export const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    location: '',
-    message: ''
-  });
+  const WHATSAPP_PHONE_DISPLAY = "(11) 97827-3924";
+  const WHATSAPP_PHONE_WA = "5511978273924";
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  const waText = encodeURIComponent(
+    "Olá! Quero agendar uma avaliação do Protocolo CILLS (cabelo/barba/sobrancelhas). Pode me informar a próxima disponibilidade e a unidade mais indicada?"
+  );
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    try {
-      const API_URL = process.env.REACT_APP_BACKEND_URL;
-      const response = await fetch(`${API_URL}/api/schedule-evaluation`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      if (!response.ok) {
-        throw new Error('Erro ao enviar formulário');
-      }
-      
-      toast.success('Mensagem enviada com sucesso! Em breve entraremos em contato.');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        location: '',
-        message: ''
-      });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
-    }
-  };
-
-  const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.');
-    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');
-  };
+  const whatsappLink = `https://wa.me/${WHATSAPP_PHONE_WA}?text=${waText}`;
+  const email = "studiobatisteli@gmail.com";
+  const instagram = "@sbatistei";
+  const instagramLink = "https://www.instagram.com/sbatistei/";
 
   return (
-    <section id="contato" className="py-20 px-4 sm:px-6 lg:px-8 bg-navy text-white" data-testid="contact-section">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-cinzel font-bold mb-4">
-            Agende Sua Avaliação Gratuita
-          </h2>
-          <p className="text-xl text-gold font-montserrat-light">
-            O primeiro passo para sua transformação começa aqui
+    <section id="contato" className="py-16">
+      <div className="mx-auto max-w-5xl px-4">
+        <div className="mb-10 text-center">
+          <h2 className="text-3xl font-semibold">Entre em contato</h2>
+          <p className="mt-2 text-sm opacity-80">
+            Atendimento sob marcação. Para resposta mais rápida, fale conosco no WhatsApp.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-2xl font-montserrat font-medium mb-6">
-              Entre em Contato
-            </h3>
-            <p className="text-gray-200 font-montserrat-light mb-8 leading-relaxed">
-              Preencha o formulário ao lado ou entre em contato diretamente pelo WhatsApp. 
-              Nossa equipe está pronta para atendê-lo e responder todas as suas dúvidas.
-            </p>
-            <div className="space-y-4">
-              <a
-                href={`https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="contact-whatsapp-btn"
-                className="flex items-center p-4 rounded-xl border-2 border-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mr-4 group-hover:bg-gold/30 transition-colors">
-                  <Phone className="text-gold" size={24} />
+
+        <div className="grid grid-cols-1 gap-6">
+          <Card className="bg-white">
+            <CardContent className="p-6">
+              <div className="flex items-start gap-3">
+                <Phone className="mt-1 h-5 w-5" />
+                <div className="flex-1">
+                  <div className="font-semibold">WhatsApp</div>
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-block underline underline-offset-4"
+                  >
+                    {WHATSAPP_PHONE_DISPLAY}
+                  </a>
+
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-[#D4AF37] px-5 py-3 font-semibold text-black hover:opacity-90"
+                  >
+                    Agendar no WhatsApp
+                  </a>
                 </div>
-                <div className="text-left">
-                  <div className="text-sm text-gold font-montserrat font-medium">WhatsApp</div>
-                  <div className="text-white font-montserrat">{contactInfo.whatsappFormatted}</div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <Card className="bg-white">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <Mail className="mt-1 h-5 w-5" />
+                  <div>
+                    <div className="font-semibold">E-mail</div>
+                    <a
+                      href={`mailto:${email}`}
+                      className="mt-1 inline-block underline underline-offset-4"
+                    >
+                      {email}
+                    </a>
+                  </div>
                 </div>
-              </a>
-              
-              <a
-                href={`mailto:${contactInfo.email}`}
-                data-testid="contact-email-btn"
-                className="flex items-center p-4 rounded-xl border-2 border-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mr-4 group-hover:bg-gold/30 transition-colors">
-                  <Send className="text-gold" size={24} />
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <Instagram className="mt-1 h-5 w-5" />
+                  <div>
+                    <div className="font-semibold">Instagram</div>
+                    <a
+                      href={instagramLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 inline-block underline underline-offset-4"
+                    >
+                      {instagram}
+                    </a>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <div className="text-sm text-gold font-montserrat font-medium">E-mail</div>
-                  <div className="text-white font-montserrat">{contactInfo.email}</div>
-                </div>
-              </a>
-              
-              <a
-                href={contactInfo.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="contact-instagram-btn"
-                className="flex items-center p-4 rounded-xl border-2 border-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mr-4 group-hover:bg-gold/30 transition-colors">
-                  <Instagram className="text-gold" size={24} />
-                </div>
-                <div className="text-left">
-                  <div className="text-sm text-gold font-montserrat font-medium">Instagram</div>
-                  <div className="text-white font-montserrat">{contactInfo.instagram}</div>
-                </div>
-              </a>
-            </div>
+              </CardContent>
+            </Card>
           </div>
-          
         </div>
       </div>
     </section>
   );
 };
-
-export default ContactSection;
