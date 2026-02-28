@@ -73,17 +73,16 @@ export const TermsConditions = () => {
 
           <section className="mb-8">
             <h2 className="text-2xl font-montserrat font-medium text-navy mb-4">
-              4. Avaliação Inicial Gratuita
+              4. Avaliação Inicial
             </h2>
             <p className="text-gray-700 font-montserrat-light leading-relaxed">
-              Oferecemos avaliação inicial gratuita onde:
+              O primeiro passo e a realização de uma anamese e uma avaliação onde:
             </p>
             <ul className="list-disc pl-6 text-gray-700 font-montserrat-light space-y-2 mt-4">
               <li>Analisamos sua condição capilar</li>
               <li>Verificamos contraindicações</li>
               <li>Explicamos o protocolo de tratamento</li>
               <li>Fornecemos orçamento personalizado</li>
-              <li>Não há compromisso de contratação</li>
             </ul>
           </section>
 
