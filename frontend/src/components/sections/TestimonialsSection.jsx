@@ -22,6 +22,11 @@ export const TestimonialsSection = () => {
             Histórias reais de transformação e renovação
           </p>
         </div>
+
+        <p style={{ fontSize: 12, opacity: 0.7 }}>
+  DEBUG testimonialsData: {Array.isArray(testimonialsData) ? testimonialsData.length : "not-array"}
+</p>
+        
         <Carousel
           opts={{
             align: "start",
