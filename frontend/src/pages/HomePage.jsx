@@ -45,7 +45,7 @@ export const HomePage = () => {
       subtitle="Agende a sua avaliação já!"
       />
       
-      <testimonialssection />
+      <TestimonialsSection />
       <CTASection
         title="Junte-se aos nossos clientes satisfeitos!"
         subtitle="A sua transformação começa agora. Agende a sua avaliação"
