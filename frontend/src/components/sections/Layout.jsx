@@ -56,10 +56,8 @@ export const Header = ({ scrollToContact }) => {
 
 export const Footer = () => {
   const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Quero agendar uma avaliação no Studio Batisteli (Regeneração de Fios).
-Pode me informar horários disponíveis?
-Nome: ___ | Unidade/Bairro: ___ | Melhor dia/horário: ___');
-    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');
+    const message = encodeURIComponent('Olá! Quero agendar uma avaliação no Studio Batisteli (Regeneração de Fios).%0APode me informar horários disponíveis?%0ANome: ___ | Unidade/Bairro: ___ | Melhor dia/horário: ___) ')
+    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');   
   };
 
   return (
