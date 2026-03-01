@@ -56,7 +56,7 @@ export const Header = ({ scrollToContact }) => {
 
 export const Footer = () => {
   const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.');
+    const message = encodeURIComponent('Olá! Quero agendar minha avaliação no Studio Batisteli.');
     window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');
   };
 
