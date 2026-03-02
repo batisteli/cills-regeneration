@@ -1,3 +1,4 @@
+import { openWhatsApp } from "../../utils/whatsapp";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Send, Instagram } from 'lucide-react';
@@ -55,12 +56,7 @@ export const Header = ({ scrollToContact }) => {
 };
 
 export const Footer = () => {
-  const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Quero agendar uma avaliação no Studio Batisteli (Regeneração de Fios).%0APode me informar horários disponíveis?%0ANome: ___ | Unidade/Bairro: ___ | Melhor dia/horário: ___) ')
-    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');   
-  };
-
-  return (
+    return (
     <>
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8" data-testid="footer">
         <div className="max-w-7xl mx-auto">

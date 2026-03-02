@@ -1,17 +1,11 @@
+import { openWhatsApp } from "../../utils/whatsapp";
 import React from "react";
 import { Phone, Mail, Instagram, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
-
+import { contactInfo } from "../../data/mock";
 export const ContactSection = () => {
   const PHONE_DISPLAY = "(11) 97827-3924";
   const PHONE_TEL = "+5511978273924";
-  const PHONE_WA = "5511978273924";
-
-  const waText = encodeURIComponent(
-    "Olá! Quero agendar uma avaliação do Protocolo CILLS (cabelo/barba/sobrancelhas). Pode me informar a próxima disponibilidade e a unidade mais indicada?"
-  );
-  const whatsappLink = `https://wa.me/${PHONE_WA}?text=${waText}`;
-
   const email = "studiobatisteli@gmail.com";
   const instagramHandle = "@sbatistei.regeneracaocapilar";
   const instagramLink = "https://www.instagram.com/sbatistei.regeneracaocapilar/";
@@ -68,14 +62,13 @@ export const ContactSection = () => {
                     Agende sua avaliação com atendimento mais rápido.
                   </p>
 
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#D4AF37] px-6 py-3 font-semibold text-black hover:opacity-90"
-                  >
-                    Agendar no WhatsApp
-                  </a>
+                  <button
+  type="button"
+  onClick={() => openWhatsApp(contactInfo.whatsapp)}
+  className="mt-4 inline-flex items-center justify-center rounded-lg ..."
+>
+  Agendar no WhatsApp
+</button>
                 </div>
               </div>
             </CardContent>
