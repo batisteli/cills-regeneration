@@ -1,13 +1,10 @@
+import { openWhatsApp } from "../utils/whatsapp";
+import { contactInfo } from "../data/mock";
 import React from 'react';
 import { Button } from './ui/button';
 import { Sparkles, Phone } from 'lucide-react';
 
 export const CTASection = ({ title, subtitle }) => {
-  const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Quero agendar a minha avaliação no Studio Batisteli.');
-    window.open(`https://wa.me/5511978273924?text=${message}`, '_blank');
-  };
-
   return (
     <div className="bg-gradient-to-r from-gold/10 via-gold/5 to-transparent py-12 px-4 sm:px-6 lg:px-8 my-16">
       <div className="max-w-4xl mx-auto text-center">
@@ -25,7 +22,7 @@ export const CTASection = ({ title, subtitle }) => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            onClick={openWhatsApp}
+            onClick={() => openWhatsApp(contactInfo.whatsapp)}
             data-testid="cta-whatsapp-btn"
             className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-10 py-7 shadow-lg hover:shadow-xl transition-all duration-300"
           >

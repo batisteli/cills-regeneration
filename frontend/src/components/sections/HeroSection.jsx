@@ -1,15 +1,11 @@
+import { openWhatsApp } from "../../utils/whatsapp";
 import React from 'react';
 import { Phone } from 'lucide-react';
 import { Button } from '../ui/button';
 import { heroData, contactInfo } from '../../data/mock';
 
 export const HeroSection = ({ scrollToContact }) => {
-  const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Gostaria de agendar minha avaliação gratuita no Studio Batisteli.');
-    window.open(`https://wa.me/${contactInfo.whatsapp}?text=${message}`, '_blank');
-  };
-
-  // Hero images
+    // Hero images
   const heroImages = {
     manAfter: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/o6ouq4yw_stbt-img-man-after.png",
     manBefore: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/1bbxniod_stbt-img-man-before.png",
@@ -42,7 +38,7 @@ export const HeroSection = ({ scrollToContact }) => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                onClick={openWhatsApp}
+                onClick={() => openWhatsApp(contactInfo.whatsapp)}
                 data-testid="hero-cta-btn"
                 className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
               >
