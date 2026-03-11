@@ -25,12 +25,27 @@ export const ProtocolSection = () => {
               {protocolData.description}
             </p>
             <div className="space-y-4">
-              {protocolData.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start">
-                  <CheckCircle className="text-gold mr-3 mt-1 flex-shrink-0" size={24} />
-                  <p className="text-gray-700 font-montserrat">{benefit}</p>
-                </div>
-              ))}
+  {protocolData.benefits.map((benefit, index) => (
+    <div key={index} className="flex items-start">
+      <CheckCircle className="text-gold mr-3 mt-1 flex-shrink-0" size={24} />
+      <p className="text-gray-700 font-montserrat">{benefit}</p>
+    </div>
+  ))}
+</div>
+            {/* CTA - Reservar via WhatsApp */}
+<div className="mt-6">
+  <a
+    href="https://wa.me/5511978273924?text=Ol%C3%A1!%20Quero%20reservar%20uma%20avalia%C3%A7%C3%A3o%20do%20Protocolo%20CILLS.%20Pode%20me%20informar%20a%20pr%C3%B3xima%20disponibilidade%20e%20a%20unidade%20mais%20conveniente%3F"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center rounded-lg bg-[#D4AF37] px-6 py-3 font-semibold text-black hover:opacity-90"
+  >
+    Reservar avaliação no WhatsApp
+  </a>
+  <p className="mt-2 text-sm opacity-80">
+    Resposta mais rápida por WhatsApp.
+  </p>
+</div>
             </div>
           </div>
         </div>
