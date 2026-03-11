@@ -32,6 +32,9 @@ export const ProtocolSection = () => {
     </div>
   ))}
 </div>
+            <div style={{ background: "red", color: "white", padding: 8, marginTop: 12 }}>
+  DEBUG BOTAO AQUI
+</div>
             {/* CTA - Reservar via WhatsApp */}
 <div className="mt-6">
   <a
