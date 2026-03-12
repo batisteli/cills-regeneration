@@ -5,13 +5,12 @@ import { Button } from '../ui/button';
 import { heroData, contactInfo } from '../../data/mock';
 
 export const HeroSection = ({ scrollToContact }) => {
-    // Hero images
+    // Hero images - using local images from public/images/hero/
   const heroImages = {
-    manAfter: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/o6ouq4yw_stbt-img-man-after.png",
-    manBefore: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/1bbxniod_stbt-img-man-before.png",
-    clinic: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/cnht8w2c_stbt-img-tecnica-examinando.png",
-    woman1: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/k01vufh0_stbt-woman-4.png",
-    woman2: "https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/r54mshag_stbt-woman-5.png"
+    manBefore: "/images/hero/stbt-man-before.webp",
+    manAfter: "/images/hero/stbt-man-after.webp",
+    womanBefore: "/images/hero/stbt-woman-before.webp.webp",
+    womanAfter: "/images/hero/stbt-woman-after.webp.webp"
   };
 
   return (
@@ -74,21 +73,27 @@ export const HeroSection = ({ scrollToContact }) => {
                 </div>
               </div>
               
-              {/* Row 2: Women */}
+              {/* Row 2: Women Before/After */}
               <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
-                  src={heroImages.woman1} 
-                  alt="Cliente satisfeita" 
+                  src={heroImages.womanBefore} 
+                  alt="Antes do tratamento - Mulher" 
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute bottom-3 left-3 bg-navy text-white text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
+                  Antes
+                </div>
               </div>
               
               <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
-                  src={heroImages.woman2} 
-                  alt="Confiança renovada" 
+                  src={heroImages.womanAfter} 
+                  alt="Depois do tratamento - Mulher" 
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute bottom-3 left-3 bg-gold text-navy text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
+                  Depois
+                </div>
               </div>
             </div>
             
