@@ -26,7 +26,7 @@ export const ProtocolSection = () => {
             <p className="text-lg text-gray-700 font-montserrat-light mb-8 leading-relaxed">
               {protocolData.description}
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {protocolData.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start">
                   <CheckCircle className="text-gold mr-3 mt-1 flex-shrink-0" size={24} />
@@ -34,6 +34,15 @@ export const ProtocolSection = () => {
                 </div>
               ))}
             </div>
+            <Button 
+              size="lg"
+              onClick={() => openWhatsApp(contactInfo.whatsapp)}
+              data-testid="protocol-cta-btn"
+              className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
+            >
+              <Phone className="mr-2" size={20} />
+              Agende Sua Avaliação
+            </Button>
           </div>
         </div>
       </div>
