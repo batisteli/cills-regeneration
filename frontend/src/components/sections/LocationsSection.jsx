@@ -10,10 +10,10 @@ export const LocationsSection = ({ scrollToContact }) => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-cinzel font-bold mb-4">
-            Atendimento em 6 Localidades
+            Atendimento em 6 Endereços de São Paulo
           </h2>
           <p className="text-xl text-gold font-montserrat-light">
-            Escolha a unidade mais próxima de você
+            Escolha A mais próxima de você e agende já a sua avaliação
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -54,14 +54,6 @@ export const LocationsSection = ({ scrollToContact }) => {
           <p className="text-lg font-montserrat-light mb-6">
             Atendimento personalizado com hora marcada
           </p>
-          <Button 
-            size="lg"
-            onClick={scrollToContact}
-            data-testid="locations-cta-btn"
-            className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
-          >
-            Escolher Minha Unidade
-          </Button>
         </div>
       </div>
     </section>

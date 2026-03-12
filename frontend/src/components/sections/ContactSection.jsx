@@ -11,8 +11,7 @@ export const ContactSection = () => {
   const instagramLink = "https://www.instagram.com/sbatistei.regeneracaocapilar/";
 
   // Estilo “glass” em cima do azul escuro
-  const cardClass =
-    "bg-white/10 border border-white/10 shadow-sm backdrop-blur-md text-white";
+   const cardClass = "bg-navy/80 border border-gold/30 shadow-lg text-white rounded-2xl";
   const titleClass = "text-base font-semibold";
   const linkClass = "underline underline-offset-4 text-white/90 hover:text-white";
 

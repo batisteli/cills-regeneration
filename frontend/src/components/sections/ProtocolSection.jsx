@@ -1,6 +1,8 @@
+import { Button } from "../ui/button";
+import { openWhatsApp } from "../../utils/whatsapp";
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
-import { protocolData } from '../../data/mock';
+import { CheckCircle, Phone } from "lucide-react";
+import { contactInfo, protocolData } from "../../data/mock";
 
 export const ProtocolSection = () => {
   return (
