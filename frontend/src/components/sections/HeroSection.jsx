@@ -48,52 +48,43 @@ export const HeroSection = ({ scrollToContact }) => {
           </div>
           
           {/* Elegant Image Collage - 2x2 Grid */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex flex-col items-center justify-center">
+            <h3 className="text-2xl md:text-3xl font-cinzel font-bold text-navy mb-6 text-center">
+              Resultados Reais
+            </h3>
             <div className="grid grid-cols-2 gap-4 w-full max-w-lg">
-              {/* Row 1: Before and After */}
+              {/* Row 1: Man */}
               <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.manBefore} 
-                  alt="Antes do tratamento" 
+                  alt="Resultado tratamento masculino" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-3 left-3 bg-navy text-white text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
-                  Antes
-                </div>
               </div>
               
               <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.manAfter} 
-                  alt="Depois do tratamento" 
+                  alt="Resultado tratamento masculino" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-3 left-3 bg-gold text-navy text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
-                  Depois
-                </div>
               </div>
               
-              {/* Row 2: Women Before/After */}
+              {/* Row 2: Women */}
               <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.womanBefore} 
-                  alt="Antes do tratamento - Mulher" 
+                  alt="Resultado tratamento feminino" 
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-3 left-3 bg-navy text-white text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
-                  Antes
-                </div>
               </div>
               
               <div className="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gold/40 group h-[240px]">
                 <img 
                   src={heroImages.womanAfter} 
-                  alt="Depois do tratamento - Mulher" 
+                  alt="Resultado tratamento feminino" 
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-3 left-3 bg-gold text-navy text-sm px-4 py-1.5 rounded-full font-montserrat font-medium shadow-lg">
-                  Depois
-                </div>
               </div>
             </div>
             
