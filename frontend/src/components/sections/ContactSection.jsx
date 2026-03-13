@@ -68,7 +68,7 @@ export const ContactSection = () => {
                       onClick={() => openWhatsApp(contactInfo.whatsapp)}
                       className="mt-4 inline-flex items-center justify-center rounded-lg bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium px-6 py-3 transition-colors"
                     >
-                      Agendar no WhatsApp
+                      AGENDE A SUA AVALIAÇÃO AGORA
                     </button>
                   </div>
                 </div>

@@ -41,7 +41,7 @@ export const ProtocolSection = () => {
               className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
             >
               <Phone className="mr-2" size={20} />
-              Agende Sua Avaliação
+              AGENDE A SUA AVALIAÇÃO AGORA
             </Button>
           </div>
         </div>
