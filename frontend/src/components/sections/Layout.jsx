@@ -1,4 +1,5 @@
 import { openWhatsApp } from "../../utils/whatsapp";
+import { trackWhatsAppClick } from "../../utils/analytics";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Send, Instagram } from 'lucide-react';
@@ -122,7 +123,10 @@ export const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <button
-        onClick={openWhatsApp}
+        onClick={() => {
+          trackWhatsAppClick('Floating Button');
+          openWhatsApp();
+        }}
         data-testid="floating-whatsapp-btn"
         className="fixed bottom-8 right-8 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 z-50"
         aria-label="Contato via WhatsApp"

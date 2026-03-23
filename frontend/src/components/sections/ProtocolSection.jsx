@@ -1,10 +1,16 @@
 import { Button } from "../ui/button";
 import { openWhatsApp } from "../../utils/whatsapp";
+import { trackWhatsAppClick } from "../../utils/analytics";
 import React from 'react';
 import { CheckCircle, Phone } from "lucide-react";
 import { contactInfo, protocolData } from "../../data/mock";
 
 export const ProtocolSection = () => {
+  const handleCtaClick = () => {
+    trackWhatsAppClick('Protocolo Cills');
+    openWhatsApp(contactInfo.whatsapp);
+  };
+
   return (
     <section id="protocolo" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50" data-testid="protocol-section">
       <div className="max-w-7xl mx-auto">
@@ -36,7 +42,7 @@ export const ProtocolSection = () => {
             </div>
             <Button 
               size="lg"
-              onClick={() => openWhatsApp(contactInfo.whatsapp)}
+              onClick={handleCtaClick}
               data-testid="protocol-cta-btn"
               className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
             >

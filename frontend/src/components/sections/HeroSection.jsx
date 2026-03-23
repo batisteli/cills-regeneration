@@ -1,4 +1,5 @@
 import { openWhatsApp } from "../../utils/whatsapp";
+import { trackWhatsAppClick } from "../../utils/analytics";
 import React from 'react';
 import { Phone } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -11,6 +12,11 @@ export const HeroSection = ({ scrollToContact }) => {
     manAfter: "/images/hero/stbt-man-after.webp",
     womanBefore: "/images/hero/stbt-woman-before.webp.webp",
     womanAfter: "/images/hero/stbt-woman-after.webp.webp"
+  };
+
+  const handleCtaClick = () => {
+    trackWhatsAppClick('Hero Section');
+    openWhatsApp(contactInfo.whatsapp);
   };
 
   return (
@@ -37,7 +43,7 @@ export const HeroSection = ({ scrollToContact }) => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                onClick={() => openWhatsApp(contactInfo.whatsapp)}
+                onClick={handleCtaClick}
                 data-testid="hero-cta-btn"
                 className="bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium text-lg px-8 py-6"
               >

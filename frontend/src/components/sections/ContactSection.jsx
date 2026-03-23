@@ -1,4 +1,5 @@
 import { openWhatsApp } from "../../utils/whatsapp";
+import { trackWhatsAppClick } from "../../utils/analytics";
 import React from "react";
 import { Phone, Mail, Instagram, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
@@ -10,6 +11,11 @@ export const ContactSection = () => {
   const email = "studiobatisteli@gmail.com";
   const instagramHandle = "@sbatistei.regeneracaocapilar";
   const instagramLink = "https://www.instagram.com/sbatistei.regeneracaocapilar/";
+
+  const handleWhatsAppClick = () => {
+    trackWhatsAppClick('Contato');
+    openWhatsApp(contactInfo.whatsapp);
+  };
 
   return (
     <section id="contato" className="py-20 px-4 sm:px-6 lg:px-8 bg-navy text-white" data-testid="contact-section">
@@ -65,7 +71,7 @@ export const ContactSection = () => {
                     </p>
                     <button
                       type="button"
-                      onClick={() => openWhatsApp(contactInfo.whatsapp)}
+                      onClick={handleWhatsAppClick}
                       className="mt-4 inline-flex items-center justify-center rounded-lg bg-gold hover:bg-gold-dark text-navy font-montserrat font-medium px-6 py-3 transition-colors"
                     >
                       AGENDE A SUA AVALIAÇÃO AGORA
