@@ -132,10 +132,10 @@ const MaintenancePage = () => {
         </div>
         
         {/* Message */}
-        <h1 className="text-white text-xl md:text-2xl lg:text-3xl font-montserrat font-medium uppercase text-center">
+        <h1 className="text-white text-lg md:text-xl lg:text-2xl font-montserrat font-medium uppercase text-center whitespace-nowrap">
           Estamos fora de serviço. Voltaremos em breve.
         </h1>
-        <p className="text-gold text-lg md:text-xl font-montserrat font-medium mt-[20px] mb-10 text-center">
+        <p className="text-gold text-2xl md:text-3xl lg:text-4xl font-montserrat font-medium mt-[20px] mb-10 text-center">
           Deixe o seu contato para informá-lo
         </p>
         
