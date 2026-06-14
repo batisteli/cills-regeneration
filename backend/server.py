@@ -305,8 +305,93 @@ async def get_schedule_evaluation(evaluation_id: str):
 
 
 # Maintenance Contact Endpoints
+async def send_maintenance_notification_email(contact: MaintenanceContact):
+    """Send email notification for new maintenance contact"""
+    target_email = "studiobatisteli@gmail.com"
+    
+    if not SMTP_EMAIL or not SMTP_PASSWORD:
+        logger.warning("Email configuration not set, skipping email notification")
+        return
+    
+    try:
+        contact_type_label = "WhatsApp" if contact.contact_type == "whatsapp" else "E-mail"
+        
+        html_content = f"""
+        <html>
+        <head>
+            <style>
+                body {{ font-family: 'Montserrat', Arial, sans-serif; line-height: 1.6; color: #333; }}
+                .container {{ max-width: 600px; margin: 0 auto; padding: 20px; }}
+                .header {{ background-color: #202a44; color: white; padding: 20px; text-align: center; }}
+                .header h1 {{ color: #d4af37; margin: 0; }}
+                .content {{ padding: 20px; background-color: #f9f9f9; }}
+                .field {{ margin-bottom: 15px; }}
+                .field-label {{ font-weight: bold; color: #202a44; }}
+                .field-value {{ color: #555; }}
+                .footer {{ background-color: #202a44; color: #999; padding: 15px; text-align: center; font-size: 12px; }}
+                .highlight {{ background-color: #d4af37; color: #202a44; padding: 10px; border-radius: 5px; margin: 10px 0; }}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>STUDIO BATISTELI</h1>
+                    <p>Novo Contato Durante Manutenção</p>
+                </div>
+                <div class="content">
+                    <div class="highlight">
+                        <strong>Alguém deixou contato para ser informado quando voltarmos!</strong>
+                    </div>
+                    <div class="field">
+                        <span class="field-label">Nome:</span>
+                        <span class="field-value">{contact.name}</span>
+                    </div>
+                    <div class="field">
+                        <span class="field-label">Tipo de Contato:</span>
+                        <span class="field-value">{contact_type_label}</span>
+                    </div>
+                    <div class="field">
+                        <span class="field-label">Contato:</span>
+                        <span class="field-value">{contact.contact}</span>
+                    </div>
+                    <div class="field">
+                        <span class="field-label">Data:</span>
+                        <span class="field-value">{contact.created_at.strftime('%d/%m/%Y às %H:%M')}</span>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Este é um e-mail automático enviado durante o período de manutenção.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        """
+        
+        message = MIMEMultipart("alternative")
+        message["Subject"] = f"[MANUTENÇÃO] Novo Contato: {contact.name}"
+        message["From"] = SMTP_EMAIL
+        message["To"] = target_email
+        
+        html_part = MIMEText(html_content, "html")
+        message.attach(html_part)
+        
+        await aiosmtplib.send(
+            message,
+            hostname=SMTP_HOST,
+            port=SMTP_PORT,
+            username=SMTP_EMAIL,
+            password=SMTP_PASSWORD,
+            use_tls=True
+        )
+        
+        logger.info(f"Maintenance notification email sent to {target_email}")
+        
+    except Exception as e:
+        logger.error(f"Failed to send maintenance notification email: {str(e)}")
+
+
 @api_router.post("/maintenance-contacts", response_model=MaintenanceContact)
-async def create_maintenance_contact(contact_data: MaintenanceContactCreate):
+async def create_maintenance_contact(contact_data: MaintenanceContactCreate, background_tasks: BackgroundTasks):
     """Save contact information during maintenance period"""
     contact_obj = MaintenanceContact(
         name=contact_data.name,
@@ -319,6 +404,9 @@ async def create_maintenance_contact(contact_data: MaintenanceContactCreate):
     
     await db.maintenance_contacts.insert_one(contact_dict)
     logger.info(f"Maintenance contact saved: {contact_obj.name} ({contact_obj.contact_type})")
+    
+    # Send email notification in background
+    background_tasks.add_task(send_maintenance_notification_email, contact_obj)
     
     return contact_obj
 

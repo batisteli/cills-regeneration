@@ -10,9 +10,11 @@ const MaintenancePage = () => {
     contactType: 'whatsapp'
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     // Send to backend
     try {
@@ -36,6 +38,7 @@ const MaintenancePage = () => {
       // Still show success to user
       setSubmitted(true);
     }
+    setIsSubmitting(false);
   };
 
   const handleWhatsAppClick = () => {
@@ -44,17 +47,19 @@ const MaintenancePage = () => {
 
   return (
     <div className="min-h-screen relative flex items-center justify-center">
-      {/* Background Image - Results grid */}
+      {/* Background Image - Cover mode */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0"
         style={{ 
           backgroundImage: 'url(/images/hero/stbt-man-after.webp)',
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}
       />
       
-      {/* Black Overlay 60% */}
-      <div className="absolute inset-0 bg-black/60" />
+      {/* Black Overlay 40% */}
+      <div className="absolute inset-0 bg-black/40" />
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
@@ -64,16 +69,17 @@ const MaintenancePage = () => {
             src="https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/78rw88ra_stbt-logo-hz-1.png" 
             alt="Studio Batisteli Logo" 
             className="mx-auto"
-            style={{ height: '136px' }} /* Original ~80px * 1.7 = 136px */
+            style={{ height: '136px' }}
           />
         </div>
         
         {/* Message */}
-        <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-montserrat font-medium mb-12 leading-relaxed">
-          ESTAMOS FORA DE SERVIÇO.<br />
-          VOLTAREMOS EM BREVE.<br />
-          <span className="text-gold">DEIXE O SEU CONTATO</span>
+        <h1 className="text-white text-xl md:text-2xl lg:text-3xl font-montserrat font-medium uppercase whitespace-nowrap">
+          Estamos fora de serviço. Voltaremos em breve.
         </h1>
+        <p className="text-gold text-lg md:text-xl font-montserrat font-medium mt-[20px] mb-10">
+          Deixe o seu contato para informá-lo
+        </p>
         
         {!submitted ? (
           <>
@@ -110,10 +116,11 @@ const MaintenancePage = () => {
               
               <button
                 type="submit"
-                className="w-full bg-gold hover:bg-gold-dark text-navy font-montserrat font-semibold text-lg px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className="w-full bg-gold hover:bg-gold-dark text-navy font-montserrat font-semibold text-lg px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
               >
                 <Send size={20} />
-                ENVIAR CONTATO
+                {isSubmitting ? 'ENVIANDO...' : 'ENVIAR CONTATO'}
               </button>
             </form>
             
