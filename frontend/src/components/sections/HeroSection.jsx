@@ -20,7 +20,7 @@ export const HeroSection = ({ scrollToContact }) => {
   };
 
   return (
-    <section className="pt-[140px] pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white min-h-screen flex items-center">
+    <section className="pt-[220px] pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content - Centered Vertically */}

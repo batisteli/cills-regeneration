@@ -10,7 +10,7 @@ export const Header = ({ scrollToContact }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50" data-testid="header">
+    <header className="fixed top-[72px] left-0 right-0 bg-white shadow-sm z-50" data-testid="header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logo centered */}
         <div className="flex justify-center items-center pt-4 pb-2">
