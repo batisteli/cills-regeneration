@@ -46,13 +46,13 @@ const MaintenancePage = () => {
   };
 
   return (
-    <div className="min-h-screen relative flex items-center justify-center">
-      {/* Background Image - Cover mode */}
+    <div className="min-h-screen relative flex items-center justify-center bg-navy">
+      {/* Background Image - Contain mode to show full image */}
       <div 
         className="absolute inset-0"
         style={{ 
-          backgroundImage: 'url(/images/hero/stbt-man-after.webp)',
-          backgroundSize: 'cover',
+          backgroundImage: 'url(/images/maintenance-bg.png)',
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
