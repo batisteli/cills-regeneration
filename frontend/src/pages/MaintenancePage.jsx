@@ -116,8 +116,8 @@ const MaintenancePage = () => {
         </div>
       </div>
       
-      {/* Black Overlay 40% */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Black Overlay 60% */}
+      <div className="absolute inset-0 bg-black/60" />
       
       {/* Maintenance Content - Foreground */}
       <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
