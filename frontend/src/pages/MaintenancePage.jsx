@@ -116,33 +116,33 @@ const MaintenancePage = () => {
         </div>
       </div>
       
-      {/* Black Overlay 60% */}
-      <div className="absolute inset-0 bg-black/60" />
+      {/* Black Overlay 80% */}
+      <div className="absolute inset-0 bg-black/80" />
       
       {/* Maintenance Content - Foreground */}
-      <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
+      <div className="relative z-10 w-full max-w-xl mx-auto px-4 flex flex-col items-center">
         {/* Logo - 70% bigger */}
         <div className="mb-10">
           <img 
             src="https://customer-assets.emergentagent.com/job_f1640686-1f2e-4bb1-9e33-a46d25c77925/artifacts/78rw88ra_stbt-logo-hz-1.png" 
             alt="Studio Batisteli Logo" 
-            className="mx-auto drop-shadow-2xl"
+            className="drop-shadow-2xl"
             style={{ height: '136px' }}
           />
         </div>
         
         {/* Message */}
-        <h1 className="text-white text-xl md:text-2xl lg:text-3xl font-montserrat font-medium uppercase whitespace-nowrap">
+        <h1 className="text-white text-xl md:text-2xl lg:text-3xl font-montserrat font-medium uppercase text-center">
           Estamos fora de serviço. Voltaremos em breve.
         </h1>
-        <p className="text-gold text-lg md:text-xl font-montserrat font-medium mt-[20px] mb-10">
+        <p className="text-gold text-lg md:text-xl font-montserrat font-medium mt-[20px] mb-10 text-center">
           Deixe o seu contato para informá-lo
         </p>
         
         {!submitted ? (
           <>
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-4 mb-8">
+            <form onSubmit={handleSubmit} className="w-full space-y-4 mb-8">
               <input
                 type="text"
                 placeholder="Seu nome"
@@ -152,7 +152,7 @@ const MaintenancePage = () => {
                 required
               />
               
-              <div className="flex gap-4">
+              <div className="flex gap-4 w-full">
                 <select
                   value={formData.contactType}
                   onChange={(e) => setFormData({...formData, contactType: e.target.value})}
@@ -183,10 +183,10 @@ const MaintenancePage = () => {
             </form>
             
             {/* Direct Contact Options */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center w-full">
               <button
                 onClick={handleWhatsAppClick}
-                className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-montserrat font-medium px-6 py-3 rounded-lg transition-colors"
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-montserrat font-medium px-6 py-3 rounded-lg transition-colors"
               >
                 <Phone size={20} />
                 WhatsApp Direto
@@ -194,7 +194,7 @@ const MaintenancePage = () => {
               
               <a
                 href="mailto:studiobatisteli@gmail.com"
-                className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white font-montserrat font-medium px-6 py-3 rounded-lg transition-colors border border-white/30 backdrop-blur-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white font-montserrat font-medium px-6 py-3 rounded-lg transition-colors border border-white/30 backdrop-blur-sm"
               >
                 <Mail size={20} />
                 Enviar E-mail
@@ -203,7 +203,7 @@ const MaintenancePage = () => {
           </>
         ) : (
           /* Success Message */
-          <div className="bg-green-600/20 border border-green-500 rounded-lg p-8 backdrop-blur-sm">
+          <div className="w-full bg-green-600/20 border border-green-500 rounded-lg p-8 backdrop-blur-sm text-center">
             <p className="text-green-400 text-xl font-montserrat font-medium mb-2">
               ✓ Contato recebido com sucesso!
             </p>
