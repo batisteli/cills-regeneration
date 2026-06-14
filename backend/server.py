@@ -96,6 +96,22 @@ class ScheduleEvaluation(BaseModel):
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 
+# Maintenance Contact Models
+class MaintenanceContactCreate(BaseModel):
+    name: str
+    contact: str
+    contact_type: str  # 'whatsapp' or 'email'
+
+class MaintenanceContact(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    contact: str
+    contact_type: str
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+
 # Email sending function
 async def send_notification_email(evaluation: ScheduleEvaluation):
     """Send email notification for new evaluation request"""
@@ -286,6 +302,36 @@ async def get_schedule_evaluation(evaluation_id: str):
         evaluation['created_at'] = datetime.fromisoformat(evaluation['created_at'])
     
     return evaluation
+
+
+# Maintenance Contact Endpoints
+@api_router.post("/maintenance-contacts", response_model=MaintenanceContact)
+async def create_maintenance_contact(contact_data: MaintenanceContactCreate):
+    """Save contact information during maintenance period"""
+    contact_obj = MaintenanceContact(
+        name=contact_data.name,
+        contact=contact_data.contact,
+        contact_type=contact_data.contact_type
+    )
+    
+    contact_dict = contact_obj.model_dump()
+    contact_dict['created_at'] = contact_dict['created_at'].isoformat()
+    
+    await db.maintenance_contacts.insert_one(contact_dict)
+    logger.info(f"Maintenance contact saved: {contact_obj.name} ({contact_obj.contact_type})")
+    
+    return contact_obj
+
+@api_router.get("/maintenance-contacts", response_model=List[MaintenanceContact])
+async def get_maintenance_contacts():
+    """Get all maintenance contacts"""
+    contacts = await db.maintenance_contacts.find({}, {"_id": 0}).to_list(1000)
+    
+    for contact in contacts:
+        if isinstance(contact.get('created_at'), str):
+            contact['created_at'] = datetime.fromisoformat(contact['created_at'])
+    
+    return contacts
 
 
 # Include the router in the main app

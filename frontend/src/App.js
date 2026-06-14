@@ -1,4 +1,10 @@
 import "@/App.css";
+import MaintenancePage from "./pages/MaintenancePage";
+
+// MAINTENANCE MODE ACTIVE
+// To restore the full landing page, uncomment the code below and remove MaintenancePage
+
+/*
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -18,6 +24,15 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Toaster position="top-right" />
+    </div>
+  );
+}
+*/
+
+function App() {
+  return (
+    <div className="App">
+      <MaintenancePage />
     </div>
   );
 }
